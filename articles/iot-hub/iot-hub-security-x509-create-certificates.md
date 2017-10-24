@@ -218,7 +218,7 @@ In the PowerShell window on your desktop, run the following code:
     }
     New-CAVerificationCert "<your verification code>"
     ```
-   This creates a certificate with the given subject name, signed by the CA, as a file named *VerifyCert4.cer* in your working directory. This certificate file will help validate with your IoT hub that you have the signing permission (that is, the private key) of this CA.
+    This creates a certificate with the given subject name, signed by the CA, as a file named *VerifyCert4.cer* in your working directory. This certificate file will help validate with your IoT hub that you have the signing permission (that is, the private key) of this CA.
 
 
 <a id="createx509device"></a>
@@ -268,5 +268,5 @@ In the PowerShell window on your local machine, run the following script to crea
         Write-Host ("Certificate with subject {0} has been output to {1}" -f $cnNewDeviceSubjectName, (Join-Path (get-location).path $newDevicePemPublicFileName)) 
     }
     ```
-   Then run `New-CADevice "<yourTestDevice>"` in your PowerShell window, using the friendly name that you used to create your device. When prompted for the password for the CA's private key, enter "123". This creates a _<yourTestDevice>.pfx_ file in your working directory.
+    Then run `New-CADevice "<yourTestDevice>"` in your PowerShell window, using the friendly name that you used to create your device. When prompted for the password for the CA's private key, enter "123". This creates a _<yourTestDevice>.pfx_ file in your working directory.
 
